@@ -32,8 +32,8 @@ const WalletConnectButton = ({ onAccountChange }) => {
 
   useEffect(() => {
     if (wallet) {
-      const ethersProvider = new ethers.providers.Web3Provider(wallet.provider, 'any');
-      const account = wallet.accounts[0];
+      //const ethersProvider = new ethers.providers.Web3Provider(wallet.provider, 'any');
+      const account = wallet.accounts[0].address;
       onAccountChange(account);
     }
   }, [wallet, onAccountChange]);

@@ -28,7 +28,7 @@ export default function Home() {
         <RequestHandler account={account} /><br />
         {account && (
           <div className={styles['account-info']}>
-            <p>Connected Account: {account.address}</p>
+            <p>Connected Account: {account}</p>
           </div>
         )}
       </main>

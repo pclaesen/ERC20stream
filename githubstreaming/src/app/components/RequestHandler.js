@@ -19,7 +19,7 @@ const RequestHandler = ({ account }) => {
         });
 
         // Step 3: Create Request Parameters
-        const payeeIdentity = '0xc573Cc1F309CA15FD120e50bE0166a081f253A48';
+        const payeeIdentity = account;
         const payerIdentity = '0x1B39C76b7bbF7F16795F461Ce5298E882B63a7D6';
         const requestCreateParameters = {
           requestInfo: {
@@ -72,7 +72,7 @@ const RequestHandler = ({ account }) => {
 
   return (
     <button className={styles.button} onClick={handleRequest}>
-      Handle Request
+      Create Request
     </button>
   );
 };
